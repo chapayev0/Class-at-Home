@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'loginsbgiJo.ui'
+## Form generated from reading UI file 'loginCdDLBz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.1
 ##
@@ -627,6 +627,269 @@ class Ui_login(object):
         self.verticalLayout_16.addWidget(self.frame_13)
 
         self.stackedWidget.addWidget(self.generate_cd_key_page)
+        self.activation_page = QWidget()
+        self.activation_page.setObjectName(u"activation_page")
+        self.horizontalLayout_14 = QHBoxLayout(self.activation_page)
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.frame_26 = QFrame(self.activation_page)
+        self.frame_26.setObjectName(u"frame_26")
+        self.frame_26.setFrameShape(QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_18 = QVBoxLayout(self.frame_26)
+        self.verticalLayout_18.setSpacing(0)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
+        self.frame_27 = QFrame(self.frame_26)
+        self.frame_27.setObjectName(u"frame_27")
+        self.frame_27.setFrameShape(QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_19 = QVBoxLayout(self.frame_27)
+        self.verticalLayout_19.setSpacing(0)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_19.setContentsMargins(-1, 0, -1, 0)
+        self.frame_28 = QFrame(self.frame_27)
+        self.frame_28.setObjectName(u"frame_28")
+        self.frame_28.setMaximumSize(QSize(16777215, 230))
+        self.frame_28.setFrameShape(QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_20 = QVBoxLayout(self.frame_28)
+        self.verticalLayout_20.setSpacing(0)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.frame_29 = QFrame(self.frame_28)
+        self.frame_29.setObjectName(u"frame_29")
+        self.frame_29.setMaximumSize(QSize(16777215, 60))
+        self.frame_29.setFrameShape(QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_29)
+        self.horizontalLayout_10.setSpacing(2)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.horizontalSpacer_14 = QSpacerItem(193, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_14)
+
+        self.home_btn_4 = QPushButton(self.frame_29)
+        self.home_btn_4.setObjectName(u"home_btn_4")
+        self.home_btn_4.setMinimumSize(QSize(58, 0))
+        self.home_btn_4.setMaximumSize(QSize(49, 50))
+        self.home_btn_4.setStyleSheet(u"QPushButton{\n"
+"\n"
+"	background-image: url(:/image/style/btn.png);\n"
+"    background-position: center;\n"
+"    background-repeat: no-repeat;\n"
+"	border:0px solid;\n"
+"\n"
+"}")
+
+        self.horizontalLayout_10.addWidget(self.home_btn_4)
+
+        self.label_5 = QLabel(self.frame_29)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font)
+
+        self.horizontalLayout_10.addWidget(self.label_5)
+
+        self.horizontalSpacer_15 = QSpacerItem(193, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_15)
+
+
+        self.verticalLayout_20.addWidget(self.frame_29)
+
+        self.frame_30 = QFrame(self.frame_28)
+        self.frame_30.setObjectName(u"frame_30")
+        self.frame_30.setMaximumSize(QSize(16777215, 140))
+        self.frame_30.setFrameShape(QFrame.StyledPanel)
+        self.frame_30.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.frame_30)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_16)
+
+        self.qr_lbl_2 = QLabel(self.frame_30)
+        self.qr_lbl_2.setObjectName(u"qr_lbl_2")
+        self.qr_lbl_2.setMinimumSize(QSize(100, 100))
+        self.qr_lbl_2.setMaximumSize(QSize(100, 100))
+        self.qr_lbl_2.setStyleSheet(u"background-image: url(:/image/style/icons8-key-100.png);\n"
+"")
+
+        self.horizontalLayout_11.addWidget(self.qr_lbl_2)
+
+        self.horizontalSpacer_17 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_17)
+
+
+        self.verticalLayout_20.addWidget(self.frame_30)
+
+
+        self.verticalLayout_19.addWidget(self.frame_28)
+
+        self.frame_34 = QFrame(self.frame_27)
+        self.frame_34.setObjectName(u"frame_34")
+        self.frame_34.setMaximumSize(QSize(16777215, 220))
+        self.frame_34.setFrameShape(QFrame.StyledPanel)
+        self.frame_34.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_22 = QVBoxLayout(self.frame_34)
+        self.verticalLayout_22.setSpacing(0)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.frame_35 = QFrame(self.frame_34)
+        self.frame_35.setObjectName(u"frame_35")
+        self.frame_35.setMaximumSize(QSize(16777215, 150))
+        self.frame_35.setFrameShape(QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_23 = QVBoxLayout(self.frame_35)
+        self.verticalLayout_23.setSpacing(6)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(9, 0, -1, 0)
+        self.activate_lbl = QLabel(self.frame_35)
+        self.activate_lbl.setObjectName(u"activate_lbl")
+        self.activate_lbl.setMaximumSize(QSize(16777215, 20))
+        font6 = QFont()
+        font6.setFamily(u"Poppins")
+        font6.setPointSize(14)
+        self.activate_lbl.setFont(font6)
+        self.activate_lbl.setStyleSheet(u"color: rgb(75, 75, 75);")
+        self.activate_lbl.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_23.addWidget(self.activate_lbl)
+
+        self.ac_status_lbl = QLabel(self.frame_35)
+        self.ac_status_lbl.setObjectName(u"ac_status_lbl")
+        self.ac_status_lbl.setMaximumSize(QSize(16777215, 20))
+        font7 = QFont()
+        font7.setFamily(u"Poppins Light")
+        self.ac_status_lbl.setFont(font7)
+        self.ac_status_lbl.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_23.addWidget(self.ac_status_lbl)
+
+        self.ac_key_edit = QLineEdit(self.frame_35)
+        self.ac_key_edit.setObjectName(u"ac_key_edit")
+        self.ac_key_edit.setMinimumSize(QSize(0, 45))
+        self.ac_key_edit.setFont(font7)
+        self.ac_key_edit.setStyleSheet(u"QLineEdit{\n"
+"\n"
+"color:black;\n"
+"                       border: 0px solid;\n"
+"                       padding: 0.5px 20px;\n"
+"                       margin: 2px 2px;\n"
+"                       margin-right:0px;\n"
+"	\n"
+"	background-color: rgb(240, 240, 240);\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QLineEdit:hover{\n"
+"\n"
+"\n"
+"                       border: 1px solid;\n"
+"	border-color: rgb(225, 225, 225);\n"
+"	background-color: rgb(248, 248, 248);\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"")
+        self.ac_key_edit.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_23.addWidget(self.ac_key_edit)
+
+
+        self.verticalLayout_22.addWidget(self.frame_35)
+
+        self.frame_37 = QFrame(self.frame_34)
+        self.frame_37.setObjectName(u"frame_37")
+        self.frame_37.setMaximumSize(QSize(16777215, 110))
+        self.frame_37.setFrameShape(QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_24 = QVBoxLayout(self.frame_37)
+        self.verticalLayout_24.setSpacing(0)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.verticalLayout_24.setContentsMargins(0, 0, 0, 15)
+        self.frame_38 = QFrame(self.frame_37)
+        self.frame_38.setObjectName(u"frame_38")
+        self.frame_38.setMaximumSize(QSize(16777215, 60))
+        self.frame_38.setFrameShape(QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_13 = QHBoxLayout(self.frame_38)
+        self.horizontalLayout_13.setSpacing(6)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.horizontalSpacer_20 = QSpacerItem(224, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_20)
+
+        self.activate_btn = QPushButton(self.frame_38)
+        self.activate_btn.setObjectName(u"activate_btn")
+        self.activate_btn.setMinimumSize(QSize(120, 50))
+        self.activate_btn.setFont(font3)
+        self.activate_btn.setStyleSheet(u"QPushButton{\n"
+"border:2px solid;\n"
+"border-radius:25px;\n"
+"	border-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(229, 47, 80, 255), stop:1 rgba(255, 61, 176, 255));\n"
+"color:#5f6368;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	background-color: qlineargradient(spread:pad, x1:0.000318182, y1:0.545, x2:0.966227, y2:0.489, stop:0 rgba(229, 47, 80, 255), stop:1 rgba(163, 39, 142, 255));\n"
+"	color: rgb(243, 243, 243);\n"
+";\n"
+"	\n"
+"	border-color: rgb(200, 200, 200);\n"
+"}")
+
+        self.horizontalLayout_13.addWidget(self.activate_btn)
+
+        self.go_btn = QPushButton(self.frame_38)
+        self.go_btn.setObjectName(u"go_btn")
+        self.go_btn.setMinimumSize(QSize(120, 50))
+        self.go_btn.setStyleSheet(u"QPushButton{\n"
+"border:2px solid;\n"
+"border-radius:25px;\n"
+"	border-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(229, 47, 80, 255), stop:1 rgba(255, 61, 176, 255));\n"
+"color:#5f6368;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"\n"
+"	background-color: qlineargradient(spread:pad, x1:0.000318182, y1:0.545, x2:0.966227, y2:0.489, stop:0 rgba(229, 47, 80, 255), stop:1 rgba(163, 39, 142, 255));\n"
+"	color: rgb(243, 243, 243);\n"
+";\n"
+"	\n"
+"	\n"
+"	border-color: rgb(200, 200, 200);\n"
+"}")
+
+        self.horizontalLayout_13.addWidget(self.go_btn)
+
+        self.horizontalSpacer_21 = QSpacerItem(224, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_21)
+
+
+        self.verticalLayout_24.addWidget(self.frame_38)
+
+
+        self.verticalLayout_22.addWidget(self.frame_37)
+
+
+        self.verticalLayout_19.addWidget(self.frame_34)
+
+
+        self.verticalLayout_18.addWidget(self.frame_27)
+
+
+        self.horizontalLayout_14.addWidget(self.frame_26)
+
+        self.stackedWidget.addWidget(self.activation_page)
 
         self.verticalLayout_9.addWidget(self.stackedWidget)
 
@@ -637,7 +900,7 @@ class Ui_login(object):
 
         self.retranslateUi(login)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(login)
@@ -677,5 +940,16 @@ class Ui_login(object):
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Poppins Light'; font-size:7.25pt;\">The CD number should be sent to the software company. to get  the Activation Key. </span><span style=\" font-family:'Poppins Light'; font-size:8.25pt; color:#bf0000;\">Do Not Edit CD Key!</span></p></body></html>", None))
         self.log_next_btn.setText(QCoreApplication.translate("login", u"Next", None))
+#if QT_CONFIG(tooltip)
+        self.home_btn_4.setToolTip(QCoreApplication.translate("login", u"Home", None))
+#endif // QT_CONFIG(tooltip)
+        self.home_btn_4.setText("")
+        self.label_5.setText(QCoreApplication.translate("login", u"Class@home", None))
+        self.qr_lbl_2.setText("")
+        self.activate_lbl.setText(QCoreApplication.translate("login", u"Activate", None))
+        self.ac_status_lbl.setText(QCoreApplication.translate("login", u"You can use this product by activating !", None))
+        self.ac_key_edit.setPlaceholderText(QCoreApplication.translate("login", u"Insert the Activation Key", None))
+        self.activate_btn.setText(QCoreApplication.translate("login", u"Activate", None))
+        self.go_btn.setText(QCoreApplication.translate("login", u"GO", None))
     # retranslateUi
 

@@ -97,6 +97,16 @@ class Login_window(QMainWindow):
         self.login_ui = Ui_login()
         self.login_ui.setupUi(self)
 
+        self.shadow = QGraphicsDropShadowEffect(self)
+        self.shadow.setBlurRadius(20)
+        self.shadow.setXOffset(0)
+        self.shadow.setYOffset(0)
+        self.shadow.setColor(QColor(0, 0, 0, 60))
+
+        self.login_ui.frame_11.setGraphicsEffect(self.shadow)
+
+
+
 
         def move_window(event):
 
@@ -111,6 +121,7 @@ class Login_window(QMainWindow):
         #auto run
 
         self.login_ui.stackedWidget.setCurrentWidget(self.login_ui.welcome_page)
+        self.login_ui.go_btn.hide()
 
 
 
@@ -121,8 +132,90 @@ class Login_window(QMainWindow):
         self.login_ui.key_generate_btn.clicked.connect(self.gen_key_fun)
         self.login_ui.cd_key_copy_btn.clicked.connect(self.copy_clip)
         self.login_ui.qr_save_btn.clicked.connect(self.copy_to_desk)
+        self.login_ui.log_next_btn.clicked.connect(self.next_ac_page)
+        self.login_ui.activate_btn.clicked.connect(self.activate_gen)
+        MainWindow.act(self)
 
-        #self.show()
+        #self.activate_gen()
+
+    def next_ac_page(self):
+        self.login_ui.stackedWidget.setCurrentWidget(self.login_ui.activation_page)
+
+    def activate_gen(self):
+        global spec
+        sp = spec.split("|")
+
+        print(sp)
+
+        uuid = sp[3][-5:]
+        hd = sp[6][-5:]
+        dk = sp[1][-3:]
+        mb = sp[2][-1:]
+        print(uuid)
+        print(hd)
+        print(dk)
+
+        generated_key = mb + "C" + uuid + "L" + hd + "SD" + dk
+
+        received_key = self.login_ui.ac_key_edit.text()
+
+        rep = received_key.replace("D", "W")
+        rep1 = rep.replace("#", "D")
+
+        if generated_key == rep1:
+
+            self.login_ui.activate_lbl.setText("Activated")
+            self.login_ui.activate_lbl.setStyleSheet("""
+            QLabel {
+                color: rgb(0, 227, 15);}
+            """)
+            self.login_ui.ac_status_lbl.setText("The Product is activated. Thank you for purchasing !")
+            self.login_ui.activate_lbl.setStyleSheet("""
+            QLabel {
+                color: rgb(0, 227, 15);
+                }
+            """)
+            self.login_ui.go_btn.show()
+            self.login_ui.activate_btn.hide()
+
+            self.login_ui.qr_lbl_2.setStyleSheet("""
+            QLabel {
+                
+                background-image: url(:/image/style/correct.png);}
+            """)
+
+            # self.image1 = QImage(":/image/style/correct.png")
+            # self.pixe_image2 = QPixmap.fromImage(self.image1)
+            # self.login_ui.qr_lbl_2.setPixmap(self.pixe_image2)
+
+        else:
+
+            self.login_ui.activate_lbl.setText("Activation Failed")
+            self.login_ui.activate_lbl.setStyleSheet("""
+        QLabel {
+            color: rgb(255, 0, 55);
+            }
+        """)
+            self.login_ui.ac_status_lbl.setText("Activation Key Failed. Please check and try again !")
+            self.login_ui.ac_status_lbl.setStyleSheet("""
+            QLabel {
+                color: rgb(255, 0, 55);
+                }
+            """)
+            self.login_ui.go_btn.hide()
+            self.login_ui.activate_btn.show()
+
+            self.login_ui.qr_lbl_2.setStyleSheet("""
+             QLabel {
+
+                 background-image: url(:/image/style/wrong.png);}
+             """)
+
+            # self.image2 = QImage(":/image/style/wrong.png")
+            # self.pixe_image3 = QPixmap.fromImage(self.image2)
+            # self.login_ui.qr_lbl_2.setPixmap(self.pixe_image3)
+
+
 
     def copy_to_desk(self):
 
