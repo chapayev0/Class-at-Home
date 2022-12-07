@@ -20,6 +20,11 @@ import base64
 from Crypto import Random
 from Crypto.Cipher import AES
 from hashlib import sha256
+import qrcode
+import pyperclip
+import shutil
+
+
 
 from ui.ui_cal import *
 from ui.ui_splash import *
@@ -114,10 +119,37 @@ class Login_window(QMainWindow):
 
         self.login_ui.close_btn.clicked.connect(self.close_fun)
         self.login_ui.key_generate_btn.clicked.connect(self.gen_key_fun)
+        self.login_ui.cd_key_copy_btn.clicked.connect(self.copy_clip)
+        self.login_ui.qr_save_btn.clicked.connect(self.copy_to_desk)
 
         #self.show()
 
+    def copy_to_desk(self):
 
+        #os.system("copy data/qr.png %DESKTOP%/qr.png")
+        source = "data\\cd_key_qr.png"
+
+        destination = "C:" + os.environ["HOMEPATH"] + "\Desktop\cd_key_qr.png"
+
+        print(destination)
+
+
+
+        try:
+            shutil.copy(source, destination)
+            print("File copied successfully.")
+
+        except shutil.SameFileError:
+            print("Source and destination represents the same file.")
+
+
+        except PermissionError:
+            print("Permission denied.")
+
+        except:
+            print("Error occurred while copying file.")
+    def copy_clip(self):
+        pyperclip.copy(self.login_ui.cd_key_edit.text())
 
     def gen_key_fun(self):
         self.login_ui.stackedWidget.setCurrentWidget(self.login_ui.generate_cd_key_page)
@@ -127,14 +159,42 @@ class Login_window(QMainWindow):
         encrypted = str(cipher.encrypt(spec)).replace("==", "")
         rep_j = encrypted.replace("j", "@")
         rep_x = rep_j.replace("x", "j")
-        self.login_ui.cd_key_edit.setText(str(rep_x).replace("'", ""))
+        rep_comma = rep_x.replace("'", "")
+        self.login_ui.cd_key_edit.setText(rep_comma)
+        self.qr_gen(rep_comma)
+
     def close_fun(self):
 
         self.close()
+        MainWindow().close()
+
 
     def mousePressEvent(self, event):
 
         self.dragpos = event.globalPos()
+
+    def qr_gen(self, data):
+
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=4,
+            border=4,
+        )
+
+        qr.add_data(data)
+        qr.make(fit=True)
+        img = qr.make_image()
+
+        img.save('data/cd_key_qr.png')
+
+        self.image = QImage("data/cd_key_qr.png")
+        self.pixe_image1 = QPixmap.fromImage(self.image)
+        self.login_ui.qr_lbl.setPixmap(self.pixe_image1)
+        self.login_ui.qr_lbl.setScaledContents(True)
+
+
+
 
 
 
