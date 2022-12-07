@@ -1,2 +1,2 @@
 # Class-at-Home
-lms
+Learning CD Software that hos video contents
