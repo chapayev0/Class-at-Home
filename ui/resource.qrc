@@ -1,0 +1,64 @@
+<RCC>
+  <qresource prefix="image">
+    <file>style/copy24.png</file>
+    <file>style/download24.png</file>
+    <file>style/link24.png</file>
+    <file>style/copy.png</file>
+    <file>style/download.png</file>
+    <file>style/link.png</file>
+    <file>style/icons8-key-100 (1).png</file>
+    <file>style/icons8-key-100 (2).png</file>
+    <file>style/icons8-key-100 (3).png</file>
+    <file>style/icons8-key-100.png</file>
+    <file>style/call.png</file>
+    <file>style/call-hover.png</file>
+    <file>style/fb.png</file>
+    <file>style/fb-hover.png</file>
+    <file>style/mail.png</file>
+    <file>style/mail-hover.png</file>
+    <file>style/whatsapp.png</file>
+    <file>style/whatsapp-hover.png</file>
+    <file>style/back_normal.png</file>
+    <file>style/fulscr.png</file>
+    <file>style/spkr.png</file>
+    <file>style/spkr_mute.png</file>
+    <file>style/play_lst.png</file>
+    <file>style/big_play.png</file>
+    <file>style/bag.png</file>
+    <file>style/btn.png</file>
+    <file>style/card.png</file>
+    <file>style/cat.png</file>
+    <file>style/ext.png</file>
+    <file>style/ful.png</file>
+    <file>style/nex.png</file>
+    <file>style/play.png</file>
+    <file>style/prev.png</file>
+    <file>style/set.png</file>
+    <file>style/shut.png</file>
+    <file>style/stop.png</file>
+  </qresource>
+  <qresource prefix="home_content">
+    <file>style/login.jpg</file>
+    <file>style/home_2.jpg</file>
+    <file>style/home_3.jpg</file>
+    <file>style/home_4.jpg</file>
+    <file>style/home_5.jpg</file>
+    <file>style/home_1.jpg</file>
+  </qresource>
+  <qresource prefix="l_video">
+    <file>style/g.mp4</file>
+    <file>style/c1t1.ire</file>
+    <file>style/c1t2.ire</file>
+    <file>style/c1t3.ire</file>
+  </qresource>
+  <qresource prefix="thumbnals">
+    <file>style/ins.jpg</file>
+    <file>style/comp.png</file>
+    <file>style/c1t1.jpg</file>
+    <file>style/c1t2.jpg</file>
+    <file>style/c1t3.jpg</file>
+    <file>style/chp1.jpg</file>
+    <file>style/chp2.jpg</file>
+    <file>style/chp3.jpg</file>
+  </qresource>
+</RCC>
